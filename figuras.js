@@ -6,16 +6,14 @@ function cuadrado(lado) {
     this.lado = lado;
 
     this.perimetroCuadrado = function(){
-        perimetro = this.lado * 4;
-        return perimetro+"cm";
+        return perimetro = this.lado * 4+"cm";
     };
 
     this.areaCuadrado = function(){
-        area = this.lado * this.lado;
-        return area+"cm^2";
+        return area = this.lado * this.lado +"cm^2";
     };
 }
-const cuadradoConstructor = new cuadrado(prompt("¿Cual es el tamaño de los lados del cuadrado?: "));
+//const cuadradoConstructor = new cuadrado(prompt("¿Cual es el tamaño de los lados del cuadrado?: "));
 
 console.log("Los lados del cuadrado miden: "+cuadradoConstructor.lado+"cm");
 console.log("El perimetro del cuadrado mide: "+cuadradoConstructor.perimetroCuadrado());
@@ -33,16 +31,14 @@ function triangulo(lado1, lado2, base, altura) {
     this.altura = altura;
 
     this.perimetroTriangulo = function(){
-        perimetro = (parseInt(this.lado1) + parseInt(this.lado2) + parseInt(this.base));
-        return perimetro;
+        return perimetro = (parseInt(this.lado1) + parseInt(this.lado2) + parseInt(this.base));;
     }
     this.areaTriangulo = function(){
-        area = (this.base*this.altura) / 2;
-        return area;
+        return area = (this.base*this.altura) / 2;
     }
 }
-const trianguloConstructor = new triangulo(prompt("¿Cual es el lado 1 del triangulo?: "),
-                                           prompt("¿Cual es el lado 2 del triangulo?: "),
+//const trianguloConstructor = new triangulo(prompt("¿Cual es el lado 1 del triangulo?: "),
+/*                                            prompt("¿Cual es el lado 2 del triangulo?: "),
                                            prompt("¿Cual es la base del triangulo?: "),
                                            prompt("¿Cual es la altura del triangulo?: ")
                                            );
@@ -50,7 +46,7 @@ console.log("Los lados del triangulo miden: "+trianguloConstructor.lado1+" "+tri
 console.log("La altura del triangulo mide: "+trianguloConstructor.altura);
 console.log("El perimetro del triangulo mide: "+trianguloConstructor.perimetroTriangulo());
 console.log("El area del triangulo mide: "+trianguloConstructor.areaTriangulo());
-
+ */
 console.groupEnd();
 //Codigo del circulo
 
@@ -71,7 +67,7 @@ function circulo(radio) {
         return area+"cm";
     }
 }
-const circuloConstructor = new circulo(prompt("Escribe el radio del circulo: "));
+//const circuloConstructor = new circulo(prompt("Escribe el radio del circulo: "));
 console.log("El radio del circulo es: "+circuloConstructor.radio+"cm");
 console.log("El diametro del circulo es: "+circuloConstructor.diametro+"cm")
 console.log("El valor de pi es: "+PI);
@@ -79,3 +75,21 @@ console.log("El perimetro del circulo es: "+circuloConstructor.perimetroCirculo(
 console.log("El area del circulo es: "+circuloConstructor.areaCirculo());
 
 console.groupEnd();
+
+//Aqui interactuamos con el HTML
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const constructorCuadrado = new cuadrado(value);
+    alert(constructorCuadrado.perimetroCuadrado());
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const constructorCuadrado = new cuadrado(value);
+    alert(constructorCuadrado.areaCuadrado());
+}
