@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #00416A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
+    background: linear-gradient(to right, #E4E5E6, #00416A); 
+}
+
+header {
+    text-align: center;
+    padding: 2em 2em 0 2em;
+}
+
+.figurasGeo {
+    margin-top: 2em;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.imgCirculo {
+    height: 100px;
+    width: 100px;
+    border: 0.12em solid rgb(25, 24, 24);
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.508);
+    margin-top: 1em;
+}
+
+.imgTriangulo {
+    width: 150px;
+}
+
+section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 20em;
+    display: flex;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+form {
+    display: grid;
+    padding-left: 1em;
+}
+
+input {
+    margin: 0 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.252);
+    height: 2.2em;
+    border-radius: 0.5em;
+}
+
+button {
+    margin: 0 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.41);
+    background-color: rgba(255, 255, 255, 0.899);
+    border-radius: 0.5em;
+    height: 2.2em;
+}
+
+@media (min-width: 813px) {
+
+
+    section {
+        height: 19.5em;
+        width: 45%;
+        margin: 1.5em 1em 1em 1em;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
