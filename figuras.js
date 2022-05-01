@@ -1,7 +1,3 @@
-//Codigo del cuadrado
-
-console.group("Cuadrado");
-
 function cuadrado(lado) {
     this.lado = lado;
 
@@ -13,12 +9,6 @@ function cuadrado(lado) {
         return area = this.lado * this.lado +"cm^2";
     };
 }
-
-console.groupEnd();
-//Codigo del triangulo
-
-console.group("Triangulo");
-
 function triangulo(lado1, lado2, base, altura) {
     this.lado1 = lado1;
     this.lado2 = lado2;
@@ -32,12 +22,6 @@ function triangulo(lado1, lado2, base, altura) {
         return area = (this.base*this.altura) / 2;
     }
 }
-
-console.groupEnd();
-//Codigo del circulo
-
-console.group("Circulo");
-
 function circulo(radio) {
     const PI = Math.PI;
     this.radio = radio;
