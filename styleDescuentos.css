@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #00416A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
+    background: linear-gradient(to right, #E4E5E6, #00416A); 
+    font-family: 'Noto Sans', sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+header {
+    text-align: center;
+    padding: 2em 2em 0 2em;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 23em;
+    width: 45em;
+    display: flex;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+button {
+    margin: 1em 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.41);
+    background-color: rgba(255, 255, 255, 0.899);
+    border-radius: 0.5em;
+    height: 2.2em;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    margin: 0 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.252);
+    height: 2.2em;
+    border-radius: 0.5em;
+}
