@@ -1,3 +1,5 @@
+/*
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -63,9 +65,9 @@ section {
     padding: 2em;
     margin: 2em;
     border-radius: 2em;
-    background: #E0EAFC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #E0EAFC; 
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
 }
 
 form {
@@ -109,5 +111,228 @@ a {
     body {
         display: flex;
         flex-wrap: wrap;
+    }
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;   
+}
+
+.c1 {
+    font-size: 1.4em;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(111, 69, 218);
+    height: 100px;
+    position: fixed;
+    z-index: 3;
+}
+
+.c2 {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgba(142, 97, 227, 0.842);
+    height: 80px;
+    font-size: 2em;
+}
+
+.menuIcon {
+    width: 45px;
+    height: 30px;
+}
+
+.c2:hover ~ .c21 {
+    top: 180px;
+    transition: 1s;
+}
+
+.c21:hover {
+    top: 180px;
+}
+
+.c21 {
+    transition: 1s;
+    top: -320px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    height: 270px;
+    background-color: rgba(120, 81, 219, 0.996);
+} 
+
+.c21 div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6em;
+    height: 85px;
+    margin: 0 2em 0 2em;
+    border-bottom: 1px solid black;
+}
+
+.reglas {
+    width: 200px;
+    height: 140px;
+}
+
+.c21 div a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.c3 {
+    margin: 1em 5% 5em 5%;
+    width: 90%;
+    font-size: 1.4em;
+    border-radius: 50px;
+    text-align: center;
+    padding: 1.1em;
+    background-color: rgba(255, 255, 255, 0);
+    height: 960px;
+}
+
+.c4 {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    height: auto;
+}
+
+.c5 {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background-color: rgb(113, 70, 221);
+    height: 70px;
+}
+
+.iconSocial {
+    margin: 1em 1.5em 1em 0;
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 600px) {
+    .c1 {
+        width: 25%;
+    }
+
+    .c4 {
+        width: 75%;
+    }
+
+    .c5 {
+        width: 100%;
+    }
+}
+
+.figurasGeo {
+    margin-top: 2em;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.imgCirculo {
+    height: 100px;
+    width: 100px;
+    border: 0.12em solid rgb(25, 24, 24);
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.508);
+    margin-top: 1em;
+}
+
+.imgTriangulo {
+    width: 100px;
+    height: 100px;
+    border-left: 50px solid transparent;
+    border-top: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 70px solid;
+    margin: auto;
+}
+
+section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 21em;
+    display: flex;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+    background: #E0EAFC; 
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+}
+
+form {
+    display: grid;
+    padding-left: 1em;
+}
+
+input {
+    margin: 0 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.252);
+    height: 2.2em;
+    border-radius: 0.5em;
+}
+
+button {
+    margin: 0 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.41);
+    background-color: rgba(255, 255, 255, 0.899);
+    border-radius: 0.5em;
+    height: 2.2em;
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .c1 {
+        width: 50%;
+        order: 1;
+    }
+
+    .c4 {
+        width: 100%;
+    }
+
+    .c5 {
+        width: 50%;
+        order: 2;
     }
 }
