@@ -176,6 +176,11 @@ html {
     top: 180px;
 }
 
+a {
+    color: rgb(0, 166, 255);
+    text-decoration: none;
+}
+
 .c21 {
     transition: 1s;
     top: -320px;
@@ -207,14 +212,13 @@ html {
     text-decoration: none;
 }
 .c3 {
-    margin: 1em 5% 5em 5%;
+    margin: 0 5% 5em 5%;
     width: 90%;
     font-size: 1.4em;
     border-radius: 50px;
     text-align: center;
-    padding: 1.1em;
     background-color: rgba(255, 255, 255, 0);
-    height: 960px;
+    height: 1050px;
 }
 
 .c4 {
@@ -252,7 +256,7 @@ html {
 }
 
 .figurasGeo {
-    margin-top: 2em;
+    margin: 2em 40% 0 40%;
     width: 100px;
     height: 100px;
 }
@@ -286,7 +290,7 @@ section {
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 21em;
+    height: 23em;
     display: flex;
     padding: 2em;
     margin: 2em;
