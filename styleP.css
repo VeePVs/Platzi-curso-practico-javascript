@@ -134,6 +134,7 @@ html {
         display: block;
         width: 50%;
         height: 88%;
+        background-color: rgba(142, 97, 227, 0.842);
     }
     
     .c3 {
@@ -152,7 +153,27 @@ html {
     }
 
     .menu600 {
+        background-color: rgb(142, 97, 227);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         display: flex;
+        height: 31.9%;
+        transition: 0.5s;
+        width: 31.71vw;
+
+        border: black solid 1px;
+    }
+
+    .menu600:hover {
+        width: 35vw;
+        transition: 1s;
+        background-color: rgb(189, 78, 244);
+    }
+
+    .menu600 a {
+        color: rgb(254, 254, 254);
+        text-decoration: none;
     }
 
     .c5 {
