@@ -205,13 +205,13 @@ button {
         position: fixed;
         display: block;
         width: 31.71vw;
-        height: 80.9%;
+        height: 79.3%;
         background-color: rgba(142, 97, 227, 0.842);
     }
     
     .c3 {
         position: relative;
-        top: 3;
+        top: 160px;
         right: 47vw;
         margin-top: 8em;
         margin-bottom: 0;
@@ -253,6 +253,12 @@ button {
         text-decoration: none;
     }
 
+    .iconSocial{
+        transition: 3s;
+        right: 15px;
+        position: relative;
+    }
+
     .c5 {
         bottom: 0vw;
         position: fixed;
@@ -261,8 +267,16 @@ button {
         height: 70px;
     }
 
+    .figurasGeo {
+        transition: 1s;
+        position: relative;
+        display: flex;
+        top: 100px;
+        right: -20vw;
+    }
+
     .c4 {
-        height: 1000px;
+        height: 1300px;
         display: flex;
     }
 
