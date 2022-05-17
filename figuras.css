@@ -95,14 +95,11 @@ a {
     color: aliceblue;
     text-decoration: none;
 }
+
 .c3 {
-    margin: 0 5% 5em 5%;
-    width: 90%;
-    font-size: 1.4em;
-    border-radius: 50px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0);
-    height: 1050px;
+    flex-wrap: wrap;
+    display: block;
+    height: 900px;
 }
 
 .c4 {
@@ -160,7 +157,7 @@ section {
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 23em;
+    height: 28em;
     display: flex;
     padding: 2em;
     margin: 2em;
@@ -194,7 +191,7 @@ button {
     display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 755px) {
 
     .c2, .c3, .c4, .c5 {
         display: flex;
@@ -205,21 +202,24 @@ button {
     }
 
     .c2 {
+        position: fixed;
         display: block;
         width: 31.71vw;
-        height: 88%;
+        height: 80.9%;
         background-color: rgba(142, 97, 227, 0.842);
     }
     
     .c3 {
+        position: relative;
+        top: 3;
+        right: 47vw;
         margin-top: 8em;
         margin-bottom: 0;
         display: flex;
-        height: 500px;
+        height: 700px;
     }
 
     section {
-        position: relative;
     }
     
     .c2:hover ~ .c21 {
@@ -254,12 +254,16 @@ button {
     }
 
     .c5 {
+        bottom: 0vw;
+        position: fixed;
         z-index: 3;
-        width: 100%;
+        width: 100vw;
+        height: 70px;
     }
 
     .c4 {
-        height: 90vh;
+        height: 1000px;
+        display: flex;
     }
 
 }
