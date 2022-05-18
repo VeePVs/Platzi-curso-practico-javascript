@@ -304,13 +304,26 @@ button {
 
 @media (min-width: 1350px) {
     #cuadradoSection {
-        position: relative;
         right: 5vw;
     }
 
     #trianguloSection {
-        position: relative;
         top: -320px;
         left: 8vw;
+    }
+}
+
+@media (min-width: 1500px) {
+    .figurasGeo {
+        right: -23vw;
+    }
+    #cuadradoSection {
+        left: -1vw;
+    }
+    #circuloSection {
+        left: 29vw;
+    }
+    #trianguloSection {
+        left: 13vw;
     }
 }
