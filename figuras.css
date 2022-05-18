@@ -218,9 +218,6 @@ button {
         display: flex;
         height: 700px;
     }
-
-    section {
-    }
     
     .c2:hover ~ .c21 {
         top: -360px;
@@ -282,3 +279,38 @@ button {
 
 }
 
+@media ( min-width: 1150px ) {
+    #cuadradoSection {
+        position: relative;
+        right: 8vw;
+    }
+    
+    #circuloSection {
+        position: relative;
+        top: -320px;
+        left: 24vw;
+    }
+
+    #trianguloSection {
+        position: relative;
+        top: -320px;
+        left: 6vw;
+    }
+
+    .c4 {
+        height: 970px;
+    }
+}
+
+@media (min-width: 1350px) {
+    #cuadradoSection {
+        position: relative;
+        right: 5vw;
+    }
+
+    #trianguloSection {
+        position: relative;
+        top: -320px;
+        left: 8vw;
+    }
+}
