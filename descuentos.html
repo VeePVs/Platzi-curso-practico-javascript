@@ -9,32 +9,66 @@
     <title>Descuentos y Porcentajes | Curso Practico de JavaScript Practico</title>
 </head>
 <body>
-    <header>
-        <img src="./img/4832337.png" alt="">
-        <h1>Taller 2 "Descuentos y Porcentajes"</h1>
-        <p>Este es el segundo taller del Curso Práctico de JS</p>
-        <button><a href="./index.html">Taller 1 "Figuras"</a></button>
-    </header>
+    <main class="container">
+        <div class="c1">
+            <h2><a href="./index.html">Inicio</a></h2>
+            <h1>Taller 2 "Descuentos y Porcentajes"</h1>
+            <h3>Este es el segundo taller del Curso Práctico de JS</h3>
+        </div>
+        <div class="c4">
+            <div class="c2">
+                <img src="./img/menuIcon.png" class="menuIcon" alt="">
+                <div class="menu600">
+                <a href="./figuras.html">Taller 1: "Figuras Geometricas"</a>
+            </div>
+            <div class="menu600">
+                <a href="./descuentos.html">Taller 2: "Descuentos y cupones"</a>
+            </div>
+            <div class="menu600">
+                <a href="./moda.html">Taller 3: "Porcentajes y modas"</a>
+            </div>
+            </div>
+            <div class="c21">
+                <div>
+                    <a href="./figuras.html">Taller 1: "Figuras Geometricas"</a>
+                </div>
+                <div>
+                    <a href="./descuentos.html">Taller 2: "Descuentos y cupones"</a>
+                </div>
+                <div>
+                    <a href="./moda.html">Taller 3: "Porcentajes y modas"</a>
+                </div>        
+        </div>
+        <img src="./img/4832337.png" alt="" class="figurasGeo">
 
-    <section>
-        <h2>Calcula precio a pagar de tus productos con descuento</h2>
-
-        <form>
-            <label for="inputPrice">Escribe el precio de tu producto: </label>
-            <input id="inputPrice" type="number">
-            <br>
-            <label for="inputDiscount">Escribe el descuento de tu producto: </label>
-            <input id="inputDiscount" type="number">
-            <br>
-            <label for="inputCupon">Escribe el cupon si lo posees: </label>
-            <input id="inputCupon">
-            <br>
-            <button type="button" onclick="calcularBotonDescuento()">
-                Calcular el precio con descuento
-            </button>
-            <p id="resultPrice"></p>
-        </form>
-    </section>
-    <script src="./descuentos.js"></script>
+            <div class="c3">
+                <section>
+                    <h2>Calcula precio a pagar de tus productos con descuento</h2>
+    
+                    <form>
+                        <label for="inputPrice">Escribe el precio de tu producto: </label>
+                        <input id="inputPrice" type="number">
+                        <br>
+                        <label for="inputDiscount">Escribe el descuento de tu producto: </label>
+                        <input id="inputDiscount" type="number">
+                        <br>
+                        <label for="inputCupon">Escribe el cupon si lo posees: </label>
+                        <input id="inputCupon">
+                        <br>
+                        <button type="button" onclick="calcularBotonDescuento()">
+                            Calcular el precio con descuento
+                        </button>
+                        <p id="resultPrice"></p>
+                    </form>
+                </section>
+            </div>
+        <div class="c5">
+            <div><a target="_blank" href="https://www.instagram.com/bpvs2001/"><img src="./img/instagram.png" class="iconSocial" alt=""></a></div>
+            <div><a target="_blank" href="https://www.facebook.com/andrew.pabuencevargas/"><img src="./img/facebook.png" class="iconSocial" alt=""></a></div>
+            <div><a target="_blank" href="https://platzi.com/p/AndrePabu/"><img src="./img/platzi-bd.png" class="iconSocial"></a></div>
+            <div><a target="_blank" href="https://github.com/AndrewPabuence"><img src="./img/githup.png" class="iconSocial" alt=""></a></div>
+        </div>
+        <script src="./descuentos.js"></script>
+    </main>
 </body>
 </html>

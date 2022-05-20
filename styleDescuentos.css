@@ -1,11 +1,11 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html {
-    background: #00416A;  /* fallback for old browsers */
+    background: #00416A;
     background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
     background: linear-gradient(to right, #E4E5E6, #00416A); 
     font-family: 'Noto Sans', sans-serif;
@@ -35,9 +35,9 @@ section {
     padding: 2em;
     margin: 2em;
     border-radius: 2em;
-    background: #E0EAFC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #E0EAFC; 
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
 }
 
 button {
@@ -59,4 +59,333 @@ input {
     border: 0.2em solid rgba(210, 255, 255, 0.252);
     height: 2.2em;
     border-radius: 0.5em;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;   
+}
+
+.c1 {
+    font-size: 1.4em;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(111, 69, 218);
+    height: 100px;
+    position: fixed;
+    z-index: 3;
+}
+
+.c2 {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgba(142, 97, 227, 0.842);
+    height: 80px;
+    font-size: 2em;
+}
+
+.menuIcon {
+    width: 45px;
+    height: 30px;
+}
+
+.c2:hover ~ .c21 {
+    top: 180px;
+    transition: 1s;
+}
+
+.c21:hover {
+    top: 180px;
+}
+
+a {
+    color: rgb(0, 166, 255);
+    text-decoration: none;
+}
+
+.c21 {
+    transition: 1s;
+    top: -320px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    height: 270px;
+    background-color: rgba(120, 81, 219, 0.996);
+} 
+
+.c21 div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6em;
+    height: 85px;
+    margin: 0 2em 0 2em;
+    border-bottom: 1px solid black;
+}
+
+.reglas {
+    width: 200px;
+    height: 140px;
+}
+
+.c21 div a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.c3 {
+    height: 310px;
+    flex-wrap: wrap;
+    display: block;
+}
+
+.c4 {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    height: 800px;
+}
+
+.c5 {
+    position: relative;
+    margin-top: 100px;
+    z-index: 3;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background-color: rgb(113, 70, 221);
+    height: 70px;
+}
+
+.iconSocial {
+    margin: 1em 1.5em 1em 0;
+    width: 40px;
+    height: 40px;
+}
+
+.figurasGeo {
+    margin: 2em 40% 0 40%;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.imgCirculo {
+    height: 100px;
+    width: 100px;
+    border: 0.12em solid rgb(25, 24, 24);
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.508);
+    margin-top: 1em;
+}
+
+.imgTriangulo {
+    width: 100px;
+    height: 100px;
+    border-left: 50px solid transparent;
+    border-top: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 70px solid;
+    margin: auto;
+}
+
+section {
+    z-index: 2;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    height: 37em;
+    display: flex;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+    background: #E0EAFC; 
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+}
+
+form {
+    display: grid;
+    padding-left: 1em;
+}
+
+input {
+    margin: 0 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.252);
+    height: 2.2em;
+    border-radius: 0.5em;
+}
+
+button {
+    margin: 0 1em 1em 1em;
+    border: 0.2em solid rgba(210, 255, 255, 0.41);
+    background-color: rgba(255, 255, 255, 0.899);
+    border-radius: 0.5em;
+    height: 2.5em;
+}
+
+.menu600 {
+    display: none;
+}
+
+@media (min-width: 755px) {
+    .c2, .c3, .c4, .c5 {
+        display: flex;
+    }
+    
+    .c1 {
+        width: 100%;
+    }
+
+    .c2 {
+        position: fixed;
+        display: block;
+        width: 31.71vw;
+        height: 79.3%;
+        background-color: rgba(142, 97, 227, 0.842);
+    }
+    
+    .c3 {
+        position: relative;
+        top: 160px;
+        right: 47vw;
+        margin-top: 8em;
+        margin-bottom: 0;
+        display: flex;
+    }
+    
+    .c2:hover ~ .c21 {
+        top: -360px;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .menu600 {
+        background-color: rgb(142, 97, 227);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 31.99%;
+        transition: 0.5s;
+        width: 31.71vw;
+        border: black solid 1px;
+    }
+
+    .menu600:hover {
+        width: 35vw;
+        transition: 1s;
+        background-color: rgb(189, 78, 244);
+    }
+
+    .menu600 a {
+        color: rgb(254, 254, 254);
+        text-decoration: none;
+    }
+
+    .iconSocial{
+        transition: 3s;
+        right: 15px;
+        position: relative;
+    }
+
+    .c5 {
+        bottom: 0vw;
+        position: fixed;
+        z-index: 3;
+        width: 100vw;
+        height: 70px;
+        margin-top: 0px;
+    }
+
+    .figurasGeo {
+        transition: 1s;
+        position: relative;
+        display: flex;
+        top: 100px;
+        right: -20vw;
+    }
+
+    .c4 {
+        height: 640px;
+        display: flex;
+    }
+
+    section {
+        font-size: 1.01em;
+        height: 36.5em;
+        width: 350px;
+        transition: 1s;
+        position: relative;
+        display: flex;
+        right: -2vw;
+    }
+
+}
+
+@media ( min-width: 1130px ) {
+    .c4 {
+        height: 650px;
+    }
+    section {
+        right: -6.5vw;
+    }
+}
+
+@media (min-width: 1350px) {
+    section {
+        right: -9vw;
+    }
+}
+
+@media (min-width: 1500px) {
+    section {
+        right: -15vw;
+    }
+
+    .figurasGeo {
+        right: -23vw;
+    }
+    #cuadradoSection {
+        left: -1vw;
+    }
+    #circuloSection {
+        left: 29vw;
+    }
+    #trianguloSection {
+        left: 13vw;
+    }
 }
